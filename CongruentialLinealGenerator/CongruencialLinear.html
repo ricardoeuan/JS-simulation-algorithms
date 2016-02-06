@@ -1,0 +1,31 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Generador Congruencial Linear</title>           
+	</head>
+	<body>
+
+		<h1>Generador Congruencial Lineal</h1>    
+		<h3>Ricardo Euan - A01260473</h3>               
+		<noscript><font size="5" color="#ff0000"><b>JavaScript está desactivado en su browser</b></font></noscript>
+
+		<form action="#" onsubmit="generateRandom(); return false;">
+			<fieldset>
+				<legend>Entrada</legend>
+				<table>
+					<tr><td style="text-align: right">Modulo:</td><td><div><input id="MCM_modulus" type="number" min="2" value="25" /></div></td></tr>
+					<tr><td style="text-align: right">Multiplicador:</td><td><div><input id="MCM_multiplier" type="number" min="1" step="1" value="11" /></div></td></tr>
+					<tr><td style="text-align: right">Incremento:</td><td><div><input id="MCM_increment" type="number" min="1" step="1" value="17" /></div></td></tr>
+					<tr><td style="text-align: right">Semilla:</td><td><div><input id="MCM_seed" type="number" min="0" step="1" value="3" /></div></td></tr>
+					<tr><td style="text-align: right">Numeros aleatorios a generar:</td><td><div><input id="MCM_count" type="number" min="1" step="1" value="10" /></div></td></tr>
+				</table>
+				<input type="submit" value="Generar numeros aleatorios" >
+			</fieldset>
+			<fieldset>
+				<legend>Salida</legend>
+				<div><textarea id="MCM_output" cols="30" rows="15" readonly="readonly"></textarea></div>
+			</fieldset>
+		</form>
+		<script type="text/javascript" src="linearCongruential.js"></script>
+	</body>
+	</html>
